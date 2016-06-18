@@ -3,7 +3,7 @@
     document.documentElement.style.fontSize = winW / desW * 100 + "px";
 }(750);
 
-~function(){
+/*~function(){
     var step = 0,divList=null;
     var swp=new Swiper(".swiper-container",{
         loop:true,
@@ -29,7 +29,32 @@
             curDiv.id=index===step?curDiv.getAttribute("trueId"):null;
         })
     }
+
+}();*/
+~function (){ // 让每个页面自动切换,使用swiper内置属性
+    var swp = new Swiper('.swiper-container',{
+        loop:true,
+        direction:'vertical',
+
+        onSlidePrevEnd: function (swiper) {
+            var a = swiper.slides;
+            var index = swiper.activeIndex;
+            for (var i = 0; i < a.length; i++) {
+                a[i].id = null;
+            }
+            swiper.slides[index].id = swiper.slides[index].getAttribute("trueId");
+        },
+        onSlideNextEnd: function (swiper) {
+            var a = swiper.slides;
+            var index = swiper.activeIndex;
+            for (var i = 0; i < a.length; i++) {
+                a[i].id = null;
+            }
+            swiper.slides[index].id = swiper.slides[index].getAttribute("trueId");
+        }
+    })
 }();
+
 
 ~function(){
     var audioBox=document.querySelector(".audio"),myAudio=audioBox.getElementsByTagName("audio")[0];

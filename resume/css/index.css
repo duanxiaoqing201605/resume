@@ -71,7 +71,7 @@ html, body {
 }
 
 .bg {
-    background: url("../img/背景图.jpg") no-repeat;
+    background: url("../img/backgroundbg.jpg") no-repeat;
     background-size: 100% 100%;
 }
 /*--第一页--*/
@@ -125,13 +125,13 @@ html, body {
     top: 5.21rem;
     width: 0.14rem;
     height: 5.72rem;
-    background: url("../img/直线.png") no-repeat center 0;
+    background: url("../img/line.png") no-repeat center 0;
 }
 .pageTwo span,.pageTwo img,.pageTwo ul li{
     opacity:0;
 }
 .pageTwo span {
-    background: url("../img/圆点.png") no-repeat;
+    background: url("../img/pointer.png") no-repeat;
     background-size: 100% 100%;
     display: block;
     width: 0.14rem;
@@ -231,7 +231,7 @@ html, body {
 .pageThree div span {
     position: absolute;
     z-index: 99;
-    background: url("../img/旋转圈圈.png") no-repeat;
+    background: url("../img/circle.png") no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     width: 1.76rem;
@@ -247,12 +247,12 @@ html, body {
     top: 0.26rem;
     padding-left: 1.6rem;
     padding-right:0.2rem;
-    background: url("../img/横向伸出.png") no-repeat;
+    background: url("../img/prominent.png") no-repeat;
     background-size: 100% 100%;
     width: 4.17rem;
     height: 1.18rem;
     text-align: left;
-    font-size: 0.3rem;
+    font-size: 0.25rem;
 }
 
 #page3 div:nth-child(1) span {
@@ -307,11 +307,11 @@ html, body {
     left: 0.5rem;
     top: 1.55rem;
     width: 0.18rem;
-    background: url("../img/直线.png") no-repeat center 0;
+    background: url("../img/line.png") no-repeat center 0;
 }
 
 .pageFour span {
-    background: url("../img/多边形-1.png") no-repeat;
+    background: url("../img/polygon.png") no-repeat;
     background-size: 100% 100%;
     display: block;
     width: 0.18rem;
@@ -383,7 +383,7 @@ html, body {
 }
 
 .pageFive p {
-    background: url("../img/第四页背景.png") no-repeat;
+    background: url("../img/page4bg.png") no-repeat;
     background-size: 100% 100%;
     width: 6.4rem;
     height: 1rem;
@@ -472,7 +472,7 @@ html, body {
 /*--ARROW--*/
 .arrow {
     position: absolute;
-    background: url("../img/滑动图标.png") no-repeat;
+    background: url("../img/icon.png") no-repeat;
     background-size: 100% 100%;
     width: 0.46rem;
     height: 0.56rem;
